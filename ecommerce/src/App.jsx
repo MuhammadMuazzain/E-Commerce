@@ -6,6 +6,7 @@ import LoginSingup from './Pages/LoginSingup'
 import Cart from './Pages/Cart'
 import Product from './Pages/Product'
 import Shop from './Pages/Shop'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -24,6 +25,8 @@ const App = () => {
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/login' element={<LoginSingup/>}/>
       </Routes>
+
+      <Footer/>
         
 
       </BrowserRouter>
