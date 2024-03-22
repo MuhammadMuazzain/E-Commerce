@@ -3,8 +3,8 @@ import Navbar from './Components/Navbar/Navbar'
 import {BrowserRouter, Routes , Route} from 'react-router-dom'
 import ShopCategory from './Pages/ShopCategory'
 import LoginSingup from './Pages/LoginSingup'
-import Cart from './Pages/Cart'
 import Product from './Pages/Product'
+import Cart from './Pages/Cart'
 import Shop from './Pages/Shop'
 import Footer from './Components/Footer/Footer'
 import men_banner from './Components/Assets/banner_mens.png'
@@ -27,11 +27,9 @@ const App = () => {
 
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/login' element={<LoginSingup/>}/>
+          
       </Routes>
-
       <Footer/>
-        
-
       </BrowserRouter>
     </div>
   )
