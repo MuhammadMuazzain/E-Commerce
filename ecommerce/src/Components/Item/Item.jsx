@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 const Item = (props) => {
   return (
     <div className='item'>
-        <Link to={`/product/${props.id}`}><img src={props.image} ></img></Link>
+      {/* This link can only be accessed when clicked on an Item */}
+        <Link to={`/product/${props.id}`}><img onClick={scrollTo(0,0)}src={props.image} ></img></Link>
         <p>{props.name}</p>
         <div className="item-prices">
             <div className="item-price-new">

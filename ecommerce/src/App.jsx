@@ -21,8 +21,9 @@ const App = () => {
           <Route path='/mens' element={<ShopCategory banner={men_banner} category="men"/>} />
           <Route path='/womens' element={<ShopCategory banner={women_banner} category="women"/>} />
           <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid"/>} />
-
-          <Route path='/product' element={<Product/>}/>
+All the routes can be accessed through navbar , but the only route:  this cant be accessed. It will only be accessed when we click on
+an Item , it puts that items in the Search bar , from where we can get that id , and show it Product page.
+          {/* <Route path='/product' element={<Product/>}/> */}
           <Route path='/product/:productId' element={<Product/>}/>
 
           <Route path='/cart' element={<Cart/>}/>
